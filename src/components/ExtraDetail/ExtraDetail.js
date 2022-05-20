@@ -1,6 +1,9 @@
 import "./ExtraDetail.css";
+import { Data } from "../Main/Context";
+import { useContext } from "react";
 
-const ExtraDetail = ({ data }) => {
+const ExtraDetail = () => {
+  const data = useContext(Data);
   return (
     <div className="extra-detail">
       <div className="wind-speed">

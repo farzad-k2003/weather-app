@@ -52,6 +52,7 @@
 }
 
 .seven-hours .weather-item h4 {
+  max-width: 80px;
   text-align: center;
 }
 

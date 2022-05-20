@@ -1,6 +1,9 @@
 import "./SevenHours.css";
+import { Data } from "../Main/Context";
+import { useContext } from "react";
 
-const SevenHours = ({ data }) => {
+const SevenHours = () => {
+  const data = useContext(Data);
   return (
     <div className="seven-hours">
       {data?.list.map((item, index) => {

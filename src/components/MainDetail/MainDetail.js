@@ -1,4 +1,8 @@
-const MainDetail = ({ data }) => {
+import { Data } from "../Main/Context";
+import { useContext } from "react";
+
+const MainDetail = () => {
+  const data = useContext(Data);
   return (
     <div className="main-detail">
       <div className="main-detail-name">

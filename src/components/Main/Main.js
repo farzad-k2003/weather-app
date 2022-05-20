@@ -1,5 +1,6 @@
-import axios from "axios";
 import { useEffect, useState } from "react";
+import { Data } from "./Context";
+import axios from "axios";
 import Weather from "../Weather";
 import Input from "../Input";
 import "./Main.css";
@@ -23,8 +24,10 @@ const Main = () => {
   }, [query]);
   return (
     <div className="main">
-      <Input setQuery={setQuery} />
-      <Weather data={data} />
+      <Data.Provider value={data}>
+        <Input setQuery={setQuery} />
+        <Weather />
+      </Data.Provider>
     </div>
   );
 };
