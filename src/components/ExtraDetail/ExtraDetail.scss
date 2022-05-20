@@ -1,0 +1,32 @@
+.extra-detail {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 5px;
+
+  div {
+    text-align: center;
+  }
+
+  .extra-detail-item {
+    margin: 1px auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .wind-speed-title-number {
+      font-weight: 800;
+      color: rgb(0, 0, 100);
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .extra-detail {
+    flex-direction: column;
+
+    .extra-detail-item {
+      width: 60%;
+    }
+  }
+}

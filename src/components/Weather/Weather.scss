@@ -1,0 +1,38 @@
+.weather-container {
+  width: 90%;
+  height: max-content;
+  background-color: gainsboro;
+  padding: 30px 40px;
+  box-shadow: 1px 1px 5px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  .main-detail {
+    margin: 0 auto;
+    width: 80%;
+    height: max-content;
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .main-detail-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .main-detail-current-temp {
+        display: inline;
+        font-size: 40px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .weather-container {
+    .main-detail {
+      flex-direction: column;
+    }
+  }
+}

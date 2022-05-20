@@ -1,0 +1,46 @@
+.extra-detail {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 5px;
+}
+
+.extra-detail div {
+  text-align: center;
+}
+
+.extra-detail .extra-detail-item {
+  margin: 1px auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.extra-detail .extra-detail-item .wind-speed-title-number {
+  font-weight: 800;
+  color: #000064;
+}
+
+@media only screen and (max-width: 600px) {
+  .extra-detail {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .extra-detail .extra-detail-item {
+    width: 60%;
+  }
+}
+/*# sourceMappingURL=ExtraDetail.css.map */
